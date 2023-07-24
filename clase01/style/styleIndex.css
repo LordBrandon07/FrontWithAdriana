@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: #333333;
+    color: white;
+}
+
+.hello{
+    margin-left: 40vw;
+}
+
+h1{
+    font-size: 5em;
+}
+
+img{
+    width: 50px;
+}
+
+.hello1{
+    font-size: 30px;
+}

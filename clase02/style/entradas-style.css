@@ -1,0 +1,44 @@
+.form-basic{
+    display: flex;
+    flex-direction: column;
+
+}
+
+form{
+    margin: 4% 0 4% 0;
+}
+
+form label, form p{
+    display: block;
+    font-size: 150%;
+}
+
+.entrada{
+    display: block;
+    padding: 0.8% 5%; 
+    margin-bottom: 2%;
+}
+
+.entrada input{
+    width: 300px;
+    height: 30px;
+}
+
+.enviar{
+    margin-top: 2%;
+    width: 50%;
+    padding: 0.8% 5%; 
+    font-size: 120%;
+    font-weight: bold;
+    color: white;
+    background: rgb(199, 109, 109);
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background: rgb(226, 102, 102);
+    transform: scale(1.20);
+}
