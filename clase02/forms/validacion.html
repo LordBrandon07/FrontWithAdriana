@@ -16,71 +16,47 @@
 <body>
     <!-- Encabezado -->
     <header>
-        <img class="logo" src="../img/alura.png" alt="logo" srcset="">
+        <img class="logo" src="../img/LogoMalefisico.png" alt="logo" srcset="">
         <h1>FORMULARIOS</h1>
     </header>
     <!-- Contenedor delcontenido -->
     <div class="contenido">
         <div class="titulo">
-            <h2>Input basicos</h2>
+            <h2>validacion  </h2>
         </div>
         <form class="form-basic needs-validation" action="#" novalidate>
-            <div class="entrada">
+            <!-- <div class="entrada">
                 <label for="">Tipo text</label>
                 <input name="text" id="text" class="form-control" type="text" placeholder="text" required>
                 <div class="valid-feedback">
                     la buena mi chino
                 </div>
-            </div>
+            </div> -->
             <div class="entrada">
-                <label for="">Nombre</label>
-                <input class="name" type="text" placeholder="name" required>
-                <span>
+                <label class="encima" for="">Nombre</label>
+                <input class="name campo" type="text" placeholder="name" required>
+                <span class="icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
                     <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
                 </svg></span>
             </div>
             <div class="entrada">
                 <label for="">Tipo email</label>
-                <input type="email" class="form-control" required>
-            </div>
-            <div class="entrada">
-                <label for="">Tipo contraseña</label>
-                <input type="password" required>
-            </div>
-            <div class="entrada">
-                <label for="">Tipo texto largo</label>
-                <textarea class="textarea" name="" id="" cols="30" rows="10"></textarea>
-            </div>
-            <div class="entrada">
-                <label for="">Tipo lista desplegable</label>
-                <section name="select">
-                    <option value="">opcion 1</option>
-                    <option value="">opcion 2</option>
-                    <option value="">opcion 3</option>
-                </section>
-            </div>
-            <div class="entrada">
-                <label for="">Acepto terminos y condiciones</label>
-                <input type="checkbox">
+                <input type="email" class="email campo" placeholder="email" required>
+                <span class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                </svg></span>
             </div>
             <div class="entrada">
                 <label for="">Seleccione el tipo de habitacion</label>
-                <div class="opciones">
-                    <option name="opc" value="sencilla">sencilla</option>
-                    <input type="radio">
-                </div>
-                <div class="opciones">
-                    <option name="opc" value="doble">doble</option>
-                    <input type="radio">
-                </div>
-                <div class="opciones">
-                    <option name="opc" value="familiar">familiar</option>
-                    <input type="radio">
-                </div>
-                <div class="invalid-feedback">
-                    You must agree before submitting.
-                </div>
+                <label for="sencillaRadio"><input type="radio" name="tipo" id="sencilla">Sencilla</label>
+                <label for="dobleRadio"><input type="radio" name="tipo" id="doble">Doble</label>
+                <label for="familiarRadio"><input type="radio" name="tipo" id="familiar">Familiar</label>
+            </div>
+            <div class="entrada cajaver">
+                <input type="checkbox">
+                <label for="">He leido y acepto las condiciones del contrato</label>
             </div>
             <div class="entrada">
                 <button class="enviar" type="sumbit" value="enviar">enviar</button>
@@ -94,7 +70,7 @@
                 <a href="../index.html">Inicio</a>
             </li>
             <li>
-                <a class="activo" href="./forms/entradas.html">From entradas</a>
+                <a class="" href="./entradas.html">From entradas</a>
             </li>
             <li>
                 <a href="">Form registro</a>
@@ -106,7 +82,7 @@
                 <a href="">Form buscar</a>
             </li>
             <li>
-                <a href="">Form validacion</a>
+                <a class="activo" href="./validacion.html">Form validacion</a>
             </li>
         </ul>
     </div>

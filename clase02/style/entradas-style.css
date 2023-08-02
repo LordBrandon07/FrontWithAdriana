@@ -24,6 +24,18 @@ form label, form p{
     height: 30px;
 }
 
+.desplegable{
+    display: flex;
+}
+
+.seleccion{
+    margin-left: 5%;
+}
+
+.cajaver{
+    display: flex;
+}
+
 .enviar{
     margin-top: 2%;
     width: 50%;
