@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: #000000;
+    align-items: center;
+}
+
+.logo{
+    width: 9%;
+    height: 6%;
+    border-radius: 50%;
+    margin: 0 0 0 20px;
+}
+
+.activo{
+    color: white;
+}
+
+
+.navv{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+.navv_lista, a{
+    color: #baab8f;
+    padding: 5%;
+    text-decoration: none;
+    font-size: 120%;
+}
+
+section{
+    width: 100%;
+    height: 100%;
+}
+
+.banner{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.titulo_banner{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    color: white;
+    margin-top: 11%;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 500%;
+    text-shadow: 0.1em 0.1em 0.2em black
+}
+
+.blue_label{
+    width: 80%;
+    text-align: center;
+}
+
+.redes_esp{
+    color: black;
+}
+
+.logo_red{
+    font-size: 40px;
+}
+
+footer{
+    text-align: center;
+    background: url(../imgs/footerFondo.jpg);
+}
+
+footer p{
+    padding: 1%;
+}
