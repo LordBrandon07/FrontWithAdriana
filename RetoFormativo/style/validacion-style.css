@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+
+#ageForm {
+    display: none;
+}
+
+h1{
+    color: white;
+    font-weight: bold;
+    font-size: 300%;
+}
+
+P{
+    color: white;
+    font-size: 150%;
+}
+
+.logoo{
+    margin: 14% 0 0 0;
+    width: 10%;
+}
+
+.next{
+    border-color: var(--second-color);
+    background-color: black;
+    color: var(--second-color);
+    border-style: solid;
+    font-size: 120%;
+    padding: 0.5%;
+}
+
+input{
+    padding: 8%;
+    border: var(--second-color);
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+label{
+    color: white;
+    font-size: 100%;
+}
+
+.confEdad{
+    display: flex;
+    justify-content: center;
+}
+
+.next_edad{
+    margin-top: 5%;
+    padding: 3.5%;
+}

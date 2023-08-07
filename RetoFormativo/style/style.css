@@ -30,7 +30,7 @@ header{
 }
 
 .navv_lista, a{
-    color: #baab8f;
+    color: var(--first-color);
     padding: 5%;
     text-decoration: none;
     font-size: 120%;
@@ -61,6 +61,7 @@ section{
 .blue_label{
     width: 80%;
     text-align: center;
+    margin: 0 10% 0 10%;
 }
 
 .redes_esp{
@@ -73,7 +74,7 @@ section{
 
 footer{
     text-align: center;
-    background: url(../imgs/footerFondo.jpg);
+    background: url(../imgs/fondoFooter.png);
 }
 
 footer p{
