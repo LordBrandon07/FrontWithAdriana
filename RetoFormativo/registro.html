@@ -9,11 +9,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/style.css">
-    <title>HOME</title>
+    <link rel="stylesheet" href="./style/_variables.css">
+    <link rel="stylesheet" href="./style/registro-style.css">
+    <title>REGISTRO</title>
 </head>
 <body>
     <header>
-        <img class="logo" src="./imgs/LOGO.png" alt="">
+        <img class="logo" src="./imgs/LOGOO.png" alt="">
         <nav>
             <ul class="navv">
                 <li class="navv_lista"><a href="./index.html">HOME</a></li>
@@ -25,14 +27,70 @@
         </nav>
     </header>
     <section>
-        <div class="ban">
-            <h1 class="titulo_banner">VIVA COLOMBIA, VIVA FALCAO</h1>
-            <img class="banner" src="./imgs/banner.jpg" alt="">
-        </div>
-        
+        <form action="./index.html" class="formulario flex flex--column">
+            <fieldset>
+                <legend class="form__label">Información básica</legend>
+                <div class="input-container">
+                    <input name="name" id="name" class="input" type="text" placeholder="Nombre" required data-tipo="nombre">
+                    <label class="input-label" for="name">Nombre</label>
+                    <span class="input-message-error">Este campo no es valido</span>
+                </div>
+                <div class="input-container " >
+                    <input name="email" id="email" class="input" type="email" placeholder="Email" required data-tipo="email">
+                    <label class="input-label" for="email">Email</label>
+                    <span class="input-message-error">Este campo no es valido</span>
+                </div>
+                <div class="input-container">
+                    <input name="password" id="password" class="input" type="password" placeholder="Contraseña" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" title="Mínimo ocho caracteres, al menos una letra y un número" data-tipo="password">
+                    <label class="input-label" for="password">Contraseña</label>
+                    <span class="input-message-error">Este campo no es valido</span>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend class="form__label">Información personal</legend>
+                <div class="input-container">
+                    <input name="birth" id="birth" class="input" type="date" placeholder="Fecha de nacimento" required data-tipo = 'nacimiento'>
+                    <label class="input-label" for="birth">Fecha de nacimiento</label>
+                    <span class="input-message-error">Este campo no es valido</span>
+                </div>
+                <div class="input-container">
+                    <input name="phoneNumber" id="phoneNumber" class="input" type="text" placeholder="Número telefónico" pattern="\d{10}" required minlength="10" maxlength="10" data-tipo = "numero">
+                    <label class="input-label" for="phoneNumber">Número telefónico</label>
+                    <span class="input-message-error">Este campo no es valido</span>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend class="form__label">Dirección</legend>
+                <div class="input-container">
+                    <input name="cep" id="cep" class="input" type="text" placeholder="CEP" required pattern="[\s\S]{10,40}" data-tipo="direccion">
+                    <label class="input-label" for="cep">Dirección completa</label>
+                    <span class="input-message-error">Este campo no es valido</span>
+                </div>
+                <div class="input-container">
+                    <input name="city" id="city" class="input" type="text" placeholder="Ciudad" required pattern="[\s\S]{3,40}" data-tipo="ciudad">
+                    <label class="input-label" for="city">Ciudad</label>
+                    <span class="input-message-error">Este campo no es valido</span>
+                </div>
+                <div class="input-container">
+                    <input name="state" id="state" class="input" type="text" placeholder="Estado" required pattern="[\s\S]{3,40}" data-tipo="estado">
+                    <label class="input-label" for="state">Estado</label>
+                    <span class="input-message-error">Este campo no es valido</span>
+                </div>
+            </fieldset>
+            <button class="button">Registrar</a>
+        </form>
     </section>
-    <footer>
 
+    <footer>
+        <img src="./imgs/LOGO.png" alt="" width="14%">
+        <div class="redes">
+            <a class="redes_esp" href=""><i class="bi bi-facebook logo_red"></i></a>
+            <a class="redes_esp" href=""><i class="bi bi-instagram logo_red"></i></a>
+            <a class="redes_esp" href=""><i class="bi bi-twitter logo_red"></i></i></a>
+            <a class="redes_esp" href=""><i class="bi bi-youtube logo_red"></i></a>     
+        </div>
+        <p>&copy Copyright Malefisico - 2023</p>
     </footer>
+    <script type="module" src="./js/register.js"></script>
 </body>
 </html>
