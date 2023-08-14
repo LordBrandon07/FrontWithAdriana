@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #333;
+    font-family: 'Oswald', sans-serif;
+}
+
+header{
+    background-color: #333;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo{
+
+}
+
+.titulo{
+    font-family: 'Oswald', sans-serif;
+    color: white;
+}
+
+nav{
+    background-color:aliceblue;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0.5%;
+}
+
+.menu li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+.menu a:hover{
+    color: rgb(89, 89, 91);
+}
+
+.submenu{
+    display: none;
+    position: absolute;
+}
+
+.menu li:hover .submenu{
+    display: block;
+    list-style: none;
+    background-image: url(../img/poker.jpg);
+    padding: 0.5%
+}
+
+.submenu li:hover{
+    color: rgb(89, 89, 91);     
+}
+
+.submenu li a{
+    display: block;
+}
