@@ -7,6 +7,7 @@
 body{
     background: #333;
     font-family: 'Oswald', sans-serif;
+    color: white;
 }
 
 header{
@@ -15,10 +16,6 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-around;
-}
-
-.logo{
-
 }
 
 .titulo{
@@ -56,6 +53,7 @@ nav{
     display: block;
     list-style: none;
     background-image: url(../img/poker.jpg);
+    background-size: cover;
     padding: 0.5%
 }
 
@@ -66,3 +64,85 @@ nav{
 .submenu li a{
     display: block;
 }
+
+.every{
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.banner_estatico{
+    display: flex;
+    align-items: center;
+    background-image: url(../img/banner3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.titulo_banner{
+    text-align: center;
+    font-size: 300%;
+    color: #39a900;
+    padding: 20px;
+}
+
+.parrafo_banner{
+    text-shadow: 0.5px 0.5px 0.5px #1c4505;
+    font-size: 160%;
+    color: #2e7b07;
+    padding: 20px;
+    margin-left: 5%;
+}
+
+/* .contenido{}
+
+.articulo{} */
+
+.contenido{
+    display: table;
+}
+
+.contenido img{
+    margin-top: 10px;
+}
+
+/* renderizar el contenido de las columnas */
+.entidad{
+    padding-top: 40px;
+    display: table-cell;
+    width: 66.6%;
+    column-count: 2;
+    column-gap: 50px;
+}
+
+.articulo h2{
+    font-size: 2rem;
+
+}
+
+.img_aprendices{
+    width: 100%;
+}
+
+h3{
+    font-size: 150%;
+    margin-bottom: 10px;
+}
+
+.linea_comentario {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 66.6%;
+}
+
+.comentarios a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.comentarios time {
+    color: #888;
+}
+
