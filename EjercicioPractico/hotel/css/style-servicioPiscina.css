@@ -1,0 +1,19 @@
+h1{
+    position: absolute;
+    color: #8C52FF;
+    font-size: 1000%;
+    z-index: 1;
+}
+
+.imagenPrincipal{
+    width: 100%;
+    position: absolute;
+    height: 84%;
+    object-fit: cover;
+}
+
+.descripcion{
+    position: absolute;
+    z-index: 2;
+    color: #8C52FF;
+}
