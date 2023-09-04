@@ -113,6 +113,7 @@ nav{
     padding-top: 40px;
     display: table-cell;
     width: 66.6%;
+    width: 700px;
     column-count: 2;
     column-gap: 50px;
 }
@@ -144,5 +145,96 @@ h3{
 
 .comentarios time {
     color: #888;
+}
+
+aside{
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    padding-left: 40px;
+}
+aside section{
+    display: flex;
+    flex-direction: column;
+}
+aside h3{
+    text-align: center;
+    font-size: 26px;
+    font-family: 'Oswald', sans-serif; 
+    padding: 10px 0 10px 0;
+}
+aside img{
+    padding: 10px 0 10px 0;
+}
+aside a{
+    text-decoration: none;
+    color: #7e7468;
+    padding: 10px 0 10px 0;
+}
+aside a:hover{
+    color: black;
+}
+
+/* footer */
+
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    margin-top: 50px;
+    z-index: 2;
+    left: 0;
+    width: 100%;
+    background: rgb(222, 222, 222);
+    font-family: 'Victor Mono', monospace;
+    padding-bottom: 20px;
+}
+.abajo{
+    padding-top: 30px;
+    align-content: center;
+    padding-left: 80px;
+}
+.abajo section{
+    display: table-cell;
+    width: 300px;
+    position: relative;
+    padding-right: 100px;
+}
+
+.abajo section h3{
+    color: #E3E3E3;
+    font-size: 22px;
+}
+
+.abajo section p{  
+    color: #E3E3E3;
+    font-size: 18px;
+}
+
+.sec1{
+    text-align: justify;
+}
+.abajo section a{
+    color: black;
+}
+
+.abajo a:hover {
+    text-decoration: none;
+}
+
+.abajo ul {
+    margin: 0 0 0 40px;
+    list-style: square;
+    color: black;
+}
+
+.abajo ul li a {
+    display: block;
+}
+
+.abajo section i{
+    font-size: 40px;
+    padding-right: 40px;
 }
 

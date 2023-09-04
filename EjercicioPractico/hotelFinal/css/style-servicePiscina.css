@@ -1,0 +1,104 @@
+@import url(_variables.css);
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: black;
+}
+
+nav{
+    margin: 0.5% 0 0 0;
+    position: absolute;
+    z-index: 1;
+    left: 65%;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-weight: bold;
+}
+
+nav li{
+    font-size: 160%;
+    list-style: none;  
+    padding: 15%;
+    margin: 0 1% 0 0;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+.logo{
+    position: absolute;
+    z-index: 1;
+    width: 15%;
+    margin: 0 0 0 10%;
+}
+
+.img_principal{
+    width: 1850px;
+    height: 970px;
+    object-fit: cover;
+}
+
+.panel{
+    position: absolute;
+}
+
+.textos{
+    /* color: white; */
+    z-index: 1;
+    position: absolute;
+    top: 0%;
+    color: white;
+}
+
+.panel_titulo{
+    font-size: 800%;
+    margin: 15% 0 0 12%;
+    font-family: 'EB Garamond', serif;
+}
+
+.panel_parrafo{
+    width: 50%;
+    font-size: 200%;
+    font-weight: 400;
+    text-shadow: 6px 6px 12px rgba(0, 0, 0, 1);
+    margin: 2% 0 0 12%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.panel_boton{
+    padding: 0.8%;
+    font-size: 120%;
+    border-radius: 10%;
+    border-color: white;
+    color: white;
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    background-color: var(--color-principal);
+}
+
+.explicacion{
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    top: 105%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.explicacion_imagen{
+    padding: 2% 15% 2% 12%;
+    width: 1500px;
+    height: 500px;
+    object-fit: cover;
+}
