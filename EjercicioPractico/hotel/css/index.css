@@ -20,6 +20,10 @@ header{
     justify-content: space-around;
 }
 
+.logo{
+    filter:hue-rotate(155deg);
+}
+
 .titulo{
     font-family: 'Oswald', sans-serif;
     color: white;
