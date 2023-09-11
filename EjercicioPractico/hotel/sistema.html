@@ -8,13 +8,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Montserrat:ital,wght@1,300;1,400&display=swap" rel="stylesheet">
-    <title>Hotel-Cide</title>
+    <title>Hotel servicios</title>
 </head>
 <body>
     <!-- MENU -->
     <header>
         <nav>
-            <a href="" onclick="seleccionar(this)">Blog</a>
+            <a href="./index.html" onclick="seleccionar(this)">Blog</a>
             <a href="#intro" onclick="seleccionar(this)" class="selected">Inicio</a>
             <a href="#servicios" onclick="seleccionar(this)">Servicios</a>
             <span><i class="incono_menu"><img src="./img/logo verde.png" height="50px" alt="" srcset=""></i></span>
@@ -29,18 +29,18 @@
     <section id="intro" class="bloque">
         <div class="contenido">
             <div>
-                <h1>La mejor estancia e su vida siora</h1>
+                <h1>La mejor estancia de su vida</h1>
             </div>
             <div class="formulario">
                 <form action="#servicios">
                     <h2>Iniciar sesión</h2>
                     <div class="info">
                         <label for="">Usuario</label>
-                        <input type="text">
+                        <input class="datoss" type="text">
                     </div>
                     <div class="info">
                         <label for="">Contraseña</label>
-                        <input type="password">
+                        <input class="datoss" type="password">
                     </div>
                     <div>
                         <input type="submit" value="Enviar" class="btn_enviar">
@@ -53,35 +53,32 @@
     <!-- SERVICIOS -->
 
     <section class="bloque" id="servicios">
-        <div><h2>Nuestros servicios</h2></div>
-        <div class="contenido">
-            <div class="item servicio1">
-                <div class="overlay">
-                    <a href=""><h2>Piscinas</h2></a>
-                </div>
-            </div>
-            <div class="item servicio2">
-                <div class="overlay">
-                    <a href=""><h2>Restaurante</h2></a>
-                </div>
-            </div>
-            <div class="item servicio3">
-                <div class="overlay">
-                    <a href=""><h2>Bar</h2></a>
-                </div>
-            </div>
-            <div class="item servicio4">
-                <div class="overlay">
-                    <a href=""><h2>Spa</h2></a>
-                </div>
-            </div>
-            <div class="item servicio5">
-                <div class="overlay">
-                    <a href=""><h2>Room service</h2></a>
-                </div>
+        <h2>Nuestros servicios</h2>
+        <div class="container">
+            <div class="servicios">
+                <figure class="service">
+                    <img src="./img/serv1.jpg" alt="">
+                    <a href=""><span class="text">Piscina</span></a>
+                </figure>
+                <figure class="service">
+                    <img src="./img/serv2.jpg" alt="">
+                    <span class="text">Restaurante</span>
+                </figure>
+                <figure class="service">
+                    <img src="./img/serv3.jpg" alt="">
+                    <span class="text">Bar</span>
+                </figure>
+                <figure class="service">
+                    <img src="./img/serv4.jpg" alt="">
+                    <span class="text">Spa</span>
+                </figure>
+                <figure class="service">
+                    <img src="./img/serv5.jpg" alt="">
+                    <span class="text">Room Service</span>
+                </figure>
             </div>
         </div>
-    </section>
+    </section> 
 
     <!-- RESERVAS -->
 
@@ -91,7 +88,7 @@
                 <h2>¿Desea reservar?</h2>
             </div>
             <div class="contenido">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, repellat, rem magnam exercitationem iure ipsa possimus ducimus molestiae consectetur sit enim sunt quia eaque, voluptates blanditiis cumque! Facere, illo reprehenderit!</p>
+                <p>¿Buscas un lugar cómodo, seguro y económico para alojarte en Soacha? ¡No busques más! En Hotel Soacha te ofrecemos habitaciones amplias y confortables, con wifi gratuito, televisión por cable, baño privado y servicio de limpieza. Además, contamos con un restaurante que sirve deliciosos platos típicos e internacionales, un salón de eventos para tus reuniones o celebraciones, y un parqueadero vigilado para tu tranquilidad.</p>
                 <div class="item clausulas">
                     <div class="overlay">
                         <a href=""><h2>Clausulas</h2></a>
@@ -185,27 +182,28 @@
     <section id="registro">
         <div class="contenido">
             <div class="info">
-                <label for="">Nombre</label>
-                <input type="text" name="" id="">
+                <label class="txt" for="">Nombre</label>
+                <input class="datoss" type="text" name="" id="">
             </div>
             <div class="info">
-                <label for="">Apellido</label>
-                <input type="text" name="" id="">
+                <label class="txt" for="">Apellido</label>
+                <input class="datoss" type="text" name="" id="">
             </div>
             <div class="info">
-                <label for="">Email</label>
-                <input type="email" name="" id="">
+                <label class="txt" for="">Email</label>
+                <input class="datoss" type="email" name="" id="">
             </div>
             <div class="info">
-                <label for="">Tipo doc</label>
-                <select name="" id="">
+                <label class="txt" for="">Tipo doc</label>
+                <select class="datoss" name="" id="">
                     <option value="">Cedula</option>
                     <option value="">Pasaporte</option>
                     <option value="">NIP</option>
                 </select>
             </div>
-            <div>
-                <input type="checkbox">Acepto
+            <div class="acept">
+                <label for="">Acepto terminos y condiciones<input class="datoss caja" type="checkbox"></label>
+                
             </div>
             <div>
                 <input type="submit" name="" id="" value="Enviar" class="btn_enviar">
